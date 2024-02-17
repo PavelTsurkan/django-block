@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block main %}
+{% for post in posts %}
+    <h1>{{ post.title }}</h1> 
+    <h3>{{ post.mini_description }}</h3>
+    <p>{{ post.content }}</p>
+    <i>{{ post.published_date }}</i>
+{% endfor %}
+{% endblock main %}
